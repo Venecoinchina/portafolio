@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Shadows+Into+Light&display=swap');
+
+
 :root {
     --main-color: azure;
     --main-font: #05668D;
@@ -25,7 +28,7 @@ a {
 }
 .nav {
     width: 100%;
-    height: 50px;
+    height: 80px;
     display: flex;
     justify-content: flex-end;
     position: fixed;
@@ -40,10 +43,9 @@ a {
 }
 .nav-list li a {
     margin-right: 20px;
-    /*Change font family*/
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.2rem;
-    font-weight: lighter;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 1px;
+    font-size: 2rem;
     color: azure;
     padding: 5px;
     border-radius: 5px;
@@ -62,17 +64,14 @@ a {
     align-content: center;
 }
 .welcome-section h1 {
-    font-size: 5rem;
+    font-size: 10rem;
     /*Change family font*/
-    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    font-family: 'Shadows Into Light', cursive;
     color: var(--main-font);
 }
 .welcome-section p {
-    font-size: 2.5rem;
-    /*Change family font*/
-    font-family: erdana, Geneva, Tahoma, sans-serif;;
-    font-style: italic;
-    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Kalam', cursive;
     margin-top: 20px;
     color: black;
 }
@@ -85,7 +84,7 @@ a {
     font-size: 3.4rem;
     color: black;
     padding: 20px 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Kalam', cursive;
 }
 .projects-grid {
     display: grid;
@@ -94,18 +93,63 @@ a {
     padding: 50px;
 }
 .projects-grid a {
+    font-family: 'Kalam', cursive;
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+    color: black;
     width: 100%;
     height: 300px;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 0 1px 1px var(--main-font);
-
+}
+.projects-grid .lewagon {
+    padding: 5px;
+    background-image: url('./img/lewagon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.projects-grid .google-clone {
+    padding: 5px;
+    background-image: url('./img/google-clone.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.projects-grid .techdocupage {
+    padding: 5px;
+    background-image: url('./img/techDocuPage.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.projects-grid .survey-form {
+    padding: 5px;
+    background-image: url('./img/surveyForm.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.projects-grid .landing-project {
+    padding: 5px;
+    background-image: url('./img/landingProject.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.projects-grid .freecodecamp {
+    padding: 5px;
+    background-image: url('./img/freeCodeCamp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .btn-projects {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 1px;
+    font-size: 2rem;
     color: white;
-    font-weight: lighter;
     height: 30px;
     box-shadow: 0 1px 1px #000001;
     padding: 15px;
@@ -128,16 +172,15 @@ a {
     text-align: center;
 }
 .contact-section-header h2 {
-    font-size: 5rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 6rem;
+    font-family: 'Kalam', cursive;
     color: white;
 }
 .contact-section-header p {
-    margin-top: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+    font-family: 'Kalam', cursive;
     color: white;
-    font-size: 2rem;
-    font-style: italic;
+    font-size: 3rem;
 }
 .contact-links {
     margin-top: 20px;
@@ -148,8 +191,8 @@ a {
     max-width: 840px;
 }
 .contact-details {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.4rem;
+    font-family: 'Kalam', cursive;
+    font-size: 2rem;
     color: white;
     text-shadow: 2px 2px 1px var(--main-font);
     transition: transform 0.3s ease-out;
@@ -158,18 +201,33 @@ a {
   .contact-details:hover {
     transform: translateY(8px);
 }
-.icons-thanks div {
-    
+.icons-thanks {
+    margin-top: 20px;
     align-items: center;
     padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
 }
-
 footer {
-    height: 100px;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    text-align: justify;
+    line-height: 15px;
+    height: auto;
+    text-align: left;
     background-color: var(--main-font);
-    padding: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
     color: white;
+    font-family: 'Kalam', cursive;
   }
+footer h3, .right-footer, .left-footer, a {
+    margin-right: 20px;
+    color: white;
+    font-size: 1rem;
+}
+footer a {
+    font-style: italic;
+    font-family: 'Shadows Into Light', cursive;
+}
+/*Add @media query here*/
