@@ -7,11 +7,6 @@
     --main-green: #02c39a;
     --main-light: #f0f3bd;
 }
-
-/*
-font family from googl fonts!
-*/
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -65,7 +60,6 @@ a {
 }
 .welcome-section h1 {
     font-size: 10rem;
-    /*Change family font*/
     font-family: 'Shadows Into Light', cursive;
     color: var(--main-font);
 }
@@ -230,7 +224,6 @@ footer a {
     font-style: italic;
     font-family: 'Shadows Into Light', cursive;
 }
-/*Add @media query here*/
 
 @media (max-width: 600px) {
     .welcome-section h1 {
@@ -241,8 +234,15 @@ footer a {
         margin-top: 50px;
         padding: 0 20px;
     }
+    .contact-section {
+        justify-content: space-evenly;
+        padding-bottom: 50px;
+    }
     .projects-section-header h2 {
         font-size: 2.5rem;
+    }
+    .contact-section-header {
+        padding-top: 80px;
     }
     .contact-section-header h2 {
         font-size: 2.5rem;
@@ -253,6 +253,33 @@ footer a {
     .projects-grid {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 10px;
+        padding: 0;
+    }
+    .projects-grid a {
+        margin-right: 0;
+        padding: 0;
+    }
+    .btn-projects {
+     padding: 5px 10px;
+     font-size: 1.5rem;
+     margin: 10px auto;   
+    }
+    .contact-links {
+        justify-content: center;
+    }
+    .contact-links a {
+        font-size: 1rem;
+    }
+    footer {
+        display: block;
+        text-align: center;
+        padding: 20px 5px;
+        letter-spacing: 0.5px;
+    }
+    footer .right-footer {
+        margin: 15px auto;
+    }
+    footer .left-footer {
+        margin: 0 auto;
     }
 }
