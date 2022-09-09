@@ -43,21 +43,19 @@
         display: block;
         text-align: center;
         padding: 20px 5px;
-        letter-spacing: 0.5px;
-        
+        letter-spacing: 0.5px; 
     }
     footer .right-footer {
         margin: 15px auto;
         max-width: 95%;
-
     }
     footer .left-footer {
         margin: 0 auto;
         max-width: 95%;
-
     }
     .projects-grid .lewagon, .projects-grid .google-clone, .projects-grid .techdocupage, .projects-grid .survey-form, .projects-grid .landing-project, .projects-grid .freecodecamp {
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;       
+    }
 }
