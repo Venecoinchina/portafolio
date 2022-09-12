@@ -209,7 +209,6 @@ a {
 footer {
     display: flex;
     justify-content: flex-end;
-    text-align: justify;
     line-height: 15px;
     height: auto;
     text-align: left;
